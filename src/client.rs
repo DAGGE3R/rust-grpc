@@ -5,6 +5,8 @@ pub mod hello_world {
     tonic::include_proto!("helloworld");
 }
 
+#changed logs
+
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut client = GreeterClient::connect("http://127.0.0.1:6969").await?;
